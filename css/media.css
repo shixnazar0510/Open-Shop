@@ -1,0 +1,18 @@
+@media (prefers-color-scheme: dark ) {
+    :root {
+        --text:#313131;
+        --body:#e5e5e5;
+        --dots:#313131;
+        --color:#fff;
+    }
+    .header__logo::before {
+        content: url(../images/Logo\ white.png);
+    }
+}
+
+@media (max-width: 1140px){
+    .header__nav {
+        display: unset;
+    }
+}
+/* noutbuk */
