@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="libs/bootstrap.css">
     <link rel="stylesheet" href="css/sytle.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
     <div class="reklama">
+        <div class="menu"></div>
         <div class="container">
             <ul class="rek__item">
                 <li class="rek__list">
@@ -35,41 +37,92 @@
         </div>
     </div>
     <header class="header">
-        <div class="container">
-            <div class="header__content flex-wrap">
+        <div class="container header__container">
+            <div class="header__content">
                 <a href="#!" class="header__logo"></a>
-                <input type="seorch" class="header__seorch" placeholder="What are you looking for?">
-                <button class="header__seorch-but"><i class="far fa-search"></i> SEARCH OUR STORE</button>
+                <form class="header__form d-flex">
+                    <input class="form-control header__seorch" type="search" placeholder="what are yoking wore ?"
+                        aria-label="Search">
+                    <button class="btn header__seorch-btn" type="submit">Search</button>
+                </form>
             </div>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="heder__item">
-                        <a href="#!" class="header__link">Cell Phones</a>
-                    </li>
-                    <li class="heder__item">
-                        <a href="#!" class="header__link">Computers&Laptop</a>
-                    </li>
-                    <li class="heder__item">
-                        <a href="#!" class="header__link">Tv&Video</a>
-                    </li>
-                    <li class="heder__item">
-                        <a href="#!" class="header__link">Asseccories</a>
-                    </li>
-                    <li class="heder__item">
-                        <a href="#!" class="header__link">Home appliance</a>
-                    </li>
-                    <li class="heder__item">
-                        <a href="#!" class="header__link">Video Games&Consoles</a>
-                    </li>
+                    <div class="dropdown header__dropdown ">
+                        <button class="btn header__link show" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cell Phones
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown header__dropdown">
+                        <button class="btn header__link" type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Computers&Laptop
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown header__dropdown">
+                        <button class="btn header__link" type="button" id="dropdownMenuButton3"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tv&Video
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown header__dropdown">
+                        <button class="btn header__link" type="button" id="dropdownMenuButton4"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Asseccories
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something el</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown header__dropdown">
+                        <button class="btn header__link" type="button" id="dropdownMenuButton5"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Home appliance
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown header__dropdown">
+                        <button class="btn header__link" type="button" id="dropdownMenuButton6"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Video Games&Consoles
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something els</a></li>
+                        </ul>
+                    </div>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <section class="carousel">
-            <div class="container">
-                <div id="carouselExampleIndicators" class="carousel align-center row slide" data-bs-ride="carousel">
-                    <div class="col-6">
+            <div class="container ">
+                <div id="carouselExampleIndicators" class="carousel align-center text-center row slide "
+                    data-bs-ride="carousel">
+                    <div class="col-md-6 justify-content-md-center col-8">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="images/carosel-tel.png" class="carousel__img d-block w-100" alt="...">
@@ -82,21 +135,54 @@
                             </div>
                         </div>
                     </div>
+                    <div class="carousel-indicators carousel__indicators justify-content-center">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active carousel__indicators-dots" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2" class="carousel__indicators-dots"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3" class="carousel__indicators-dots"></button>
+                    </div>
                     <div class="col-6">
                         <div class="carousel__titles">
                             <h1 class="carousel__title">Color your days with small joy</h1>
                             <a href="#!" class="carousel__link all-btn">SHOP NOW</a>
                         </div>
                     </div>
-                    <div class="carousel-indicators carousel__indicators justify-content-center">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active carousel__indicators-dots" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2" class="carousel__indicators-dots"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3" class="carousel__indicators-dots"></button>
-                    </div>
                 </div>
+            </div>
+        </section>
+        <section class="acsesuar">
+            <div class="container">
+                <div class="acsesuar__content">
+                    <a href="#" class="acsesuar__images">
+                        <img src="images/saot.png" class="acsesuar__img " alt="">
+                        <span>-57%</span>
+                        <h4>Suunto SS050143000</h4>
+                        <p>70$</p>
+                    </a>
+                    <a href="#" class="acsesuar__images">
+                        <img src="images/naushnik.png" class="acsesuar__img" alt="">
+                        <span>-57%</span>
+                        <h4>Suunto SS050143000</h4>
+                        <p>70$</p>
+                    </a>
+
+                    <a href="#" class="acsesuar__images">
+                        <img src="images/batareka.png" class="acsesuar__img" alt="">
+                        <span>-57%</span>
+                        <h4>Suunto SS050143000</h4>
+                        <p>70$</p>
+                    </a>
+                    <a href="#" class="acsesuar__images">
+                        <img src="images/poverB.png" class="acsesuar__img" alt="">
+                        <span>-57%</span>
+                        <h4>Suunto SS050143000</h4>
+                        <p>70$</p>
+                    </a>
+
+                </div>
+                <a href="#" class="acsesuar__btn all-btn">LEARN MORE</a>
             </div>
         </section>
     </main>

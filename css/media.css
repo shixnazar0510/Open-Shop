@@ -1,18 +1,112 @@
-@media (prefers-color-scheme: dark ) {
+@media (prefers-color-scheme: dark) {
     :root {
-        --text:#313131;
-        --body:#e5e5e5;
-        --dots:#313131;
-        --color:#fff;
+        --text: #fff;
+        --body: #313131;
+        --dots: #ABABAB;
+        --color: #fff;
     }
+
     .header__logo::before {
-        content: url(../images/Logo\ white.png);
+        content: url(../images/Logo.png);
     }
 }
 
-@media (max-width: 1140px){
-    .header__nav {
+@media (max-width: 1140px) {
+    .header {
         display: unset;
     }
 }
+
 /* noutbuk */
+/* @media (max-width: 1440px){} */
+/* noutbuk */
+/* @media (max-width: 1366px){} */
+/* noutbuk */
+/* @media (max-width: 1320px){} */
+/* noutbuk */
+/* @media (max-width: 1290px){} */
+/* noutbuk */
+/* @media (max-width: 1140px){} */
+/* noutbuk */
+/* @media (max-width: 1024px) {} */
+/* iped */
+@media (max-width: 992px) {
+    .header__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carousel__indicators {
+        row-gap: 35px;
+    }
+}
+
+/* iped */
+@media (max-width: 768px) {
+    .carousel {
+        justify-content: center;
+    }
+
+    .carousel__title {
+        margin-bottom: 45px;
+        line-height: 40px;
+    }
+
+    .all-btn {
+        margin-bottom: 40px;
+    }
+
+    .header__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+}
+
+/* iped */
+@media (max-width: 736px) {
+ 
+    .acsesuar__content {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    .acsesuar__images span {
+        display: none;
+    }
+
+    .acsesuar__images:nth-child(1) span,
+.acsesuar__images:nth-child(2) span  {
+    display: none;
+}
+
+}
+
+/* phone */
+@media (max-width: 684px){
+    .acsesuar__content {
+        flex: 1 1 20px;
+        flex-wrap: wrap;
+    }
+}
+/* phone */
+/* @media (max-width: 667px){} */
+/* phone */
+/* @media (max-width: 576px){} */
+/* phone */
+@media (max-width: 414px) {
+    .reklama {
+        display: none;
+    }
+}
+
+/* @media (max-width: 412px){} */
+/* phone */
+/* @media (max-width: 375px){} */
+/* phone */
+/* @media (max-width: 360px){} */
+/* phone */
+/* @media (max-width: 320px){} */
+/* phone */
