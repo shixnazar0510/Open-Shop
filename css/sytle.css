@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth !important;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1290px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -41,6 +42,8 @@ body {
 .reklama {
     background: #0C0C0C;
 }
+
+
 
 .rek__item {
     display: flex;
@@ -185,8 +188,9 @@ body {
     padding: 12px 46px;
     border: 1px solid var(--text);
     color: var(--text);
-    font-size: 2vw;
+    font-size: 1.1vw;
     display: inline-block;
+    max-width: max-content;
 }
 
 .all-btn:hover {
@@ -253,7 +257,9 @@ body {
 
 /* acsesuar start */
 
- .acsesuar__content {
+
+
+.acsesuar__content {
     display: flex;
     column-gap: 15px;
 }
@@ -261,14 +267,12 @@ body {
 .acsesuar__images {
     background: #e5e5e5;
     position: relative;
-    max-height: 500px;
-    max-width: 570px;
+    max-width: 590px;
     width: 100%;
     display: inline-block;
     color: #000 !important;
     transition: .5s;
     border-radius: 4px;
-
 }
 
 .acsesuar__images:nth-child(1) {
@@ -283,6 +287,8 @@ body {
     grid-area: sm;
 }
 
+
+
 .acsesuar__content {
     gap: 25px;
     display: grid;
@@ -293,7 +299,7 @@ body {
 
 .acsesuar__images span {
     font-size: 1.9vw;
-} 
+}
 
 .acsesuar__images:nth-child(1) span,
 .acsesuar__images:nth-child(2) span {
@@ -342,7 +348,6 @@ body {
     position: absolute;
     bottom: 20%;
     left: 10px;
-
 }
 
 .acsesuar__images:nth-child(2) h4 {
@@ -357,7 +362,6 @@ body {
     top: 6%;
     left: 10px;
 }
-
 
 
 .acsesuar__img {
@@ -382,14 +386,197 @@ body {
 
 .acsesuar__btn {
     margin: 30px auto 0;
-    text-align: center; 
+    text-align: center;
+    margin-top: 20px;
 }
 
 
-.acsesuar .container{
+.acsesuar .container {
     text-align: center;
 }
 
 
 
 /* acsesuar end */
+
+/* ------------------CellPhone__card   start*/
+
+.CellPhone__card {
+    max-width: 290px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.CellPhone__card:hover {
+    color: #fff !important;
+}
+
+.CellPhone__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+.CellPhone__card img {
+    height: 200px;
+}
+
+.CallPhone__title {
+    color: #fff;
+}
+
+.CellPhone .container .CellPhone__content {
+    text-align: center;
+}
+
+.CellPhone__btn {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: max-content;
+    display: block;
+    margin-top: 20px;
+}
+
+.CellPhone__card::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.CellPhone__card:hover::before {
+    width: 100%;
+}
+
+/* ------------------CellPhone__card   end*/
+
+
+/* ---------------------PlayStation start */
+
+.PlayStation__item-left a {
+    margin-top: 83px;
+}
+
+.PlayStation__item-left h2 {
+    margin-top: 20px;
+}
+
+.CellPhone__card {
+    box-shadow: 0px 4px 10px 0px #00000040;
+}
+
+.PlayStation__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 83px;
+}
+
+
+
+.PlayStation__item-left img {
+    width: 270px;
+}
+
+.PlayStation__item-left h2 {
+    color: #fff !important;
+}
+
+/* ---------------------PlayStation end  */
+
+/* ----------------------controller start */
+
+.controller{ 
+    position: relative;
+    width: 100%;
+}
+
+.content__controller {
+    position: absolute;
+    top: 50px;
+    color: #fff;
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+.controller__btn {
+    position: absolute;
+    bottom: 20px;
+    background: #313131;
+}
+
+
+
+
+/* ----------------------controller end */
+
+/* ------------------------footer start */
+
+.footer___wrap p {
+    margin-bottom: -2px;
+    color: #fff;
+}
+
+.fab {
+    color: #fff;
+    font-size: 23px;
+}
+
+.footer__icon {
+    display: flex;
+    column-gap: 23px;
+}
+
+.footer___wrap button {
+    background: #313131;
+    padding: 12px 25px;
+    outline: unset;
+    max-width: 200px;
+    width: 100%;
+
+}
+
+.footer___wrap input {
+    max-width: 420px;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    width: 580px;
+}
+
+.inp {
+    display: inline-block;
+    max-width: 520px;
+    width: 100%;
+    outline: unset;
+}
+
+.footer__links {
+    margin-top: 50px;
+    justify-content: center;
+    column-gap: 30px;
+    display: flex;
+}
+
+.footer__btn {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer {
+    margin-top: 15px;
+    padding: 45px 0 35px;
+    background: #0C0C0C;
+}
+
+/* ------------------------footer end */
